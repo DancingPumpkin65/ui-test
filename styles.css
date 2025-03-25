@@ -1,0 +1,60 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #0c0c0c;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: sans-serif;
+}
+
+.floating-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.square {
+  position: absolute;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.1s linear;
+}
+
+.small {
+  width: 60px;
+  height: 60px;
+}
+
+.medium {
+  width: 80px;
+  height: 80px;
+}
+
+.large {
+  width: 100px;
+  height: 100px;
+}
+
+.icon-square {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.icon-square img {
+  width: 50%;
+  height: 50%;
+  object-fit: contain;
+}
+
+.outlined-square {
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  background: transparent;
+}
+
+.gray-square {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
