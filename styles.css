@@ -1,18 +1,53 @@
-html, body {
+* {
   margin: 0;
   padding: 0;
-  background: #0c0c0c;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
+  box-sizing: border-box;
   font-family: sans-serif;
 }
 
-.floating-container {
+body {
+  background-color: #cfcfcf;
+  background-image: url(img/blur.avif);
+  background-position: 0 0;
+  background-size: 200px;
+  background-clip: border-box;
+}
+
+.hero {
   position: relative;
   width: 100%;
   height: 100vh;
   overflow: hidden;
+}
+
+h1 {
+  color: #000000;
+  font-size: 4rem;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 20rem;
+}
+
+h1 img {
+  width: 50px;
+  height: 50px;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.floating-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
 
 .square {
@@ -40,7 +75,8 @@ html, body {
 }
 
 .icon-square {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .icon-square img {
@@ -50,11 +86,11 @@ html, body {
 }
 
 .outlined-square {
-  border: 2px solid rgba(255, 255, 255, 0.3);
+  border: 2px solid rgba(255, 255, 255, 0.2);
   background: transparent;
 }
 
 .gray-square {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
